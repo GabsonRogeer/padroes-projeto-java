@@ -1,5 +1,6 @@
 package com.dio.gof;
 
+import com.dio.gof.facade.Facade;
 import com.dio.gof.singleton.SingletonEager;
 import com.dio.gof.singleton.SingletonLazy;
 import com.dio.gof.singleton.SingletonLazyHolder;
@@ -42,6 +43,11 @@ public class Tests {
         robo.mover();
         robo.mover();
         robo.mover();
+
+        // FACADE
+
+        Facade facade = new Facade();
+        facade.dadosCliente("Gabson", "60347110");
 
     }
 }
